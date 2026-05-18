@@ -22,16 +22,15 @@ jobs:
       run: |
         npm install --legacy-peer-deps
 
-    - name: Build Web Project (Force Build)
+    - name: Build Web Project
       run: |
-        export TSC_COMPILE_ON_ERROR=true
-        npm run build --if-present || echo "Web build finished with minor errors"
+        npm run build
 
-    - name: Set up JDK 17
+    - name: Set up JDK 21 (Updated for Java 21 Support)
       uses: actions/setup-java@v4
       with:
         distribution: 'zulu'
-        java-version: '17'
+        java-version: '21'
 
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
