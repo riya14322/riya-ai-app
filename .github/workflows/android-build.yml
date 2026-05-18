@@ -24,7 +24,6 @@ jobs:
 
     - name: Build Web Project (Force Build)
       run: |
-        # এখানে কোনো টাইপস্ক্রিপ্ট বা লিন্ট এরর থাকলে তা স্কিপ করে বিল্ড কমপ্লিট করবে
         export TSC_COMPILE_ON_ERROR=true
         npm run build --if-present || echo "Web build finished with minor errors"
 
