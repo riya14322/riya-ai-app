@@ -1,0 +1,8 @@
+{
+  "name": "Remix: RIYA - AI Voice Assistant",
+  "description": "A sassy, witty, and intelligent Indian female AI voice assistant.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
